@@ -1,12 +1,8 @@
-function somaValores() {
-  var n1 = document.getElementById('numberOne').value
-  var n2 = document.getElementById('numberTwo').value
+const somaValores = () => {
+  const n1 = document.getElementById('numberOne').value
+  const n2 = document.getElementById('numberTwo').value
+  const divResultado = document.getElementById('resultado')
+  const result = parseInt(n1) + parseInt(n2)
 
-  var result = parseInt(n1) + parseInt(n2)
-
-  var divResultado = document.getElementById('resultado')
-
-  divResultado.append("O resultado da soma é: ", result)
-
-  console.log(result)
+  divResultado.innerHTML = (`O resultado da soma é: ${result}`)
 }
